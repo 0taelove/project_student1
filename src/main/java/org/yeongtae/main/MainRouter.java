@@ -1,8 +1,8 @@
 package org.yeongtae.main;
 
-import org.yeongtae.game.controllers.GameControllerLocator;
 import org.yeongtae.global.Controller;
 import org.yeongtae.global.ControllerLocator;
+import org.yeongtae.global.Menu;
 import org.yeongtae.global.Router;
 import org.yeongtae.global.constants.MainMenu;
 import org.yeongtae.main.controllers.MainController;
@@ -23,15 +23,14 @@ public class MainRouter implements Router {
     }
 
     @Override
-    public void change(MainMenu mainMenu) {
+    public void change(Menu menu) {
         ControllerLocator memlocator = MemberControllerLocator.getInstance();
-        ControllerLocator gamelocator = GameControllerLocator.getInstance();
 
         Controller controller = null;
+        MainMenu mainMenu = (MainMenu) menu;
         switch(mainMenu) {
             case JOIN: controller =  memlocator.find(MainMenu.JOIN); break;
             case LOGIN: controller = memlocator.find(MainMenu.LOGIN); break;
-            case GAME: controller = gamelocator.find(MainMenu.GAME); break;
             default: controller = new MainController();
         }
 

@@ -1,7 +1,6 @@
 package org.yeongtae.member.services;
 
 import org.yeongtae.global.AbstractServiceLocator;
-import org.yeongtae.global.Menu;
 import org.yeongtae.global.Service;
 import org.yeongtae.global.ServiceLocator;
 import org.yeongtae.global.configs.DBConn;
@@ -36,13 +35,11 @@ public class MemberServiceLocator extends AbstractServiceLocator {
     }
 
     @Override
-    public Service find(Menu menu) {
-        Service service = services.get(menu);
+    public Service find(MainMenu mainMenu) {
+        Service service = services.get(mainMenu);
         if (service != null) {
             return service;
         }
-
-        MainMenu mainMenu = (MainMenu)menu;
 
         switch (mainMenu) {
             case JOIN: service = new JoinService(memberMapper(), joinValidator()); break;

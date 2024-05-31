@@ -11,5 +11,4 @@
     </root>
 
     <logger name="org.yeongtae.member.mapper" level="DEBUG" />
-    <logger name="org.yeongtae.game.mapper" level="DEBUG" />
 </configuration>

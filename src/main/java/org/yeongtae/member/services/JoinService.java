@@ -26,10 +26,10 @@ public class JoinService implements Service<RequestJoin> {
 
         // 데이터베이스에 영구 저장
         Member member = Member.builder()
-                .userId(form.getUserId())
-                .userPw(userPw)
-                .userNm(form.getUserNm())
-                .build();
+                        .userId(form.getUserId())
+                        .userPw(userPw)
+                        .userNm(form.getUserNm())
+                        .build();
         int affectedRows = mapper.register(member);
 
         if (affectedRows < 1) { // 회원 가입 처리 실패시

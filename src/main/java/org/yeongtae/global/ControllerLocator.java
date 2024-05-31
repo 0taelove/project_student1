@@ -1,5 +1,7 @@
 package org.yeongtae.global;
 
+import org.yeongtae.global.constants.MainMenu;
+
 public interface ControllerLocator {
-    Controller find(Menu menu);
+    Controller find(MainMenu mainMenu);
 }
