@@ -1,5 +1,7 @@
 package org.yeongtae.global;
 
+import org.yeongtae.global.constants.MainMenu;
+
 public interface ServiceLocator {
-    Service find(Menu menu);
+    Service find(MainMenu mainMenu);
 }

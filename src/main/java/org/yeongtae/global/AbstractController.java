@@ -2,7 +2,6 @@ package org.yeongtae.global;
 
 import org.yeongtae.global.constants.MainMenu;
 import org.yeongtae.main.MainRouter;
-import org.yeongtae.member.MemberSession;
 import org.yeongtae.template.Templates;
 
 import java.util.Scanner;
@@ -20,7 +19,7 @@ public abstract class AbstractController implements Controller {
      * 상단 공통 출력 부분
      */
     public void common() {
-        System.out.println("묵찌빠 게임 Ver1.0");
+        System.out.println("학생관리 프로그램 Ver1.0");
         System.out.println(Templates.getInstance().doubleLine());
     }
 
@@ -76,26 +75,10 @@ public abstract class AbstractController implements Controller {
 
     private void change(int menuNo) {
         MainMenu mainMenu = null;
-
-        if (MemberSession.isLogin()) { // 로그인 상태인 경우
-            switch (menuNo) {
-                case 1: mainMenu = MainMenu.GAME; break;
-                case 2:
-                    MemberSession.logout(); // 로그아웃
-                    mainMenu = MainMenu.MAIN;
-                    break;
-            }
-        } else { // 미로그인 상태
-            switch (menuNo) {
-                case 1:
-                    mainMenu = MainMenu.JOIN;
-                    break; // 회원가입
-                case 2:
-                    mainMenu = MainMenu.LOGIN;
-                    break; // 로그인
-                default:
-                    mainMenu = MainMenu.MAIN; // 메인 메뉴
-            }
+        switch(menuNo) {
+            case 1: mainMenu = MainMenu.JOIN; break; // 회원가입
+            case 2: mainMenu = MainMenu.LOGIN; break; // 로그인
+            default: mainMenu = MainMenu.MAIN; // 메인 메뉴
         }
 
         // 메뉴 컨트롤러 변경 처리 - Router
