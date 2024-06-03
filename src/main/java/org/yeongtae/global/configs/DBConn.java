@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.Reader;
 
+// DBConn 클래스는 마이바티스를 이용해 데이터베이스에 연결하는 역할을 합니다.
 public class DBConn {
     private static SqlSessionFactory factory;
 

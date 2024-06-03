@@ -9,6 +9,7 @@ import org.yeongtae.member.mapper.MemberMapper;
 import org.yeongtae.member.validators.JoinValidator;
 import org.mindrot.jbcrypt.BCrypt;
 
+// JoinService 클래스: 각각 회원 가입과 로그인에 대한 비즈니스 로직을 처리하는 서비스 클래스입니다.
 @RequiredArgsConstructor
 public class JoinService implements Service<RequestJoin> {
 

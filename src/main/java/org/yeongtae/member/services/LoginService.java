@@ -7,6 +7,7 @@ import org.yeongtae.member.entities.Member;
 import org.yeongtae.member.mapper.MemberMapper;
 import org.yeongtae.member.validators.LoginValidator;
 
+// LoginService 클래스: 각각 회원 가입과 로그인에 대한 비즈니스 로직을 처리하는 서비스 클래스입니다.
 public class LoginService implements Service<RequestLogin> {
 
     private final LoginValidator validator;

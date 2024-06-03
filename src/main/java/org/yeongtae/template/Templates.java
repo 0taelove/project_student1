@@ -8,6 +8,7 @@ import org.yeongtae.template.member.LoginTpl;
 import java.util.HashMap;
 import java.util.Map;
 
+// Templates 클래스: 이 클래스는 싱글톤 패턴을 사용하여 클래스의 인스턴스를 한 개만 생성하도록 합니다. 이 클래스는 다양한 템플릿을 관리하고, 각 템플릿을 찾거나 렌더링하는 메서드를 포함하고 있습니다.
 public class Templates {
     private static Templates instance;
     private Map<MainMenu, Template> tpls;

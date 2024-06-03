@@ -7,6 +7,7 @@ import org.yeongtae.global.constants.MainMenu;
 import java.util.HashMap;
 import java.util.Map;
 
+// MemberControllerLocator 클래스: 요청에 따른 적절한 컨트롤러를 찾아 반환하는 클래스입니다.
 public class MemberControllerLocator implements ControllerLocator {
 
     private static ControllerLocator instance;

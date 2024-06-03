@@ -5,6 +5,7 @@ import org.yeongtae.member.entities.Member;
 
 import java.util.List;
 
+// MemberMapper 인터페이스: 회원 정보에 대한 데이터베이스 연산을 담당하는 Mapper 인터페이스입니다.
 public interface MemberMapper {
     List<Member> getList(SearchMember search);
     Member get(String userId);

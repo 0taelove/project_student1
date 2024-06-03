@@ -8,6 +8,7 @@ import org.yeongtae.member.entities.Member;
 import org.yeongtae.member.mapper.MemberMapper;
 import org.mindrot.jbcrypt.BCrypt;
 
+// LoginValidator 클래스: 회원 가입 및 로그인 요청에 대한 유효성 검사를 수행하는 Validator 클래스입니다.
 public class LoginValidator implements Validator<RequestLogin>, RequiredValidator {
 
     private final MemberMapper mapper;

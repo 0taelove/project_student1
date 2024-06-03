@@ -12,6 +12,8 @@ import org.yeongtae.template.Templates;
  * 회원 가입 컨트롤러
  *
  */
+
+// JoinController 클래스: 회원 가입 요청을 처리하는 컨트롤러입니다. 사용자의 입력 정보를 받아 유효성 검사 후 데이터베이스에 저장하는 역할을 합니다.
 public class JoinController extends AbstractController {
     @Override
     public void show() {

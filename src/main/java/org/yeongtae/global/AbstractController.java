@@ -7,6 +7,7 @@ import org.yeongtae.template.Templates;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
+// AbstractController 클래스는 컨트롤러의 기본적인 동작을 정의합니다. 이 클래스는 사용자로부터 입력을 받고, 메뉴를 변경하는 기능을 가집니다.
 public abstract class AbstractController implements Controller {
 
     protected Scanner sc;

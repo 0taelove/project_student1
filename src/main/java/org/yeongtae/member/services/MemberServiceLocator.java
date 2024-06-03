@@ -9,6 +9,7 @@ import org.yeongtae.member.mapper.MemberMapper;
 import org.yeongtae.member.validators.JoinValidator;
 import org.yeongtae.member.validators.LoginValidator;
 
+// MemberServiceLocator 클래스: 요청에 따른 적절한 서비스를 찾아 반환하는 클래스입니다.
 public class MemberServiceLocator extends AbstractServiceLocator {
 
     public static ServiceLocator getInstance() {
