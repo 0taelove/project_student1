@@ -12,6 +12,8 @@ import org.yeongtae.template.Templates;
  * 로그인 컨트롤러
  *
  */
+
+// LoginController 클래스: 로그인 요청을 처리하는 컨트롤러입니다. 사용자의 아이디와 비밀번호를 받아 유효성 검사 후 회원 정보를 조회하고 세션에 로그인 정보를 저장합니다.
 public class LoginController extends AbstractController {
 
     @Override

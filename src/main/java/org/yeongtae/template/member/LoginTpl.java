@@ -3,6 +3,7 @@ package org.yeongtae.template.member;
 import org.yeongtae.template.Template;
 import org.yeongtae.template.Templates;
 
+// LoginTpl 클래스: 이 클래스는 로그인 화면을 생성하는 클래스입니다. 화면에 "로그인" 및 "다음 로그인 항목을 입력하세요."라는 메시지를 표시합니다.
 public class LoginTpl implements Template {
     @Override
     public String getTpl() {

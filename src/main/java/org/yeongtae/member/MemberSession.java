@@ -2,6 +2,7 @@ package org.yeongtae.member;
 
 import org.yeongtae.member.entities.Member;
 
+// MemberSession 클래스: 로그인한 사용자의 정보를 세션에 저장하고 관리하는 클래스입니다.
 public class MemberSession {
     private static Member member;
 

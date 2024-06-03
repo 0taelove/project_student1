@@ -3,6 +3,7 @@ package org.yeongtae.member.controllers;
 import lombok.Builder;
 import lombok.Data;
 
+// 멤버 서치
 @Data
 @Builder
 public class SearchMember {

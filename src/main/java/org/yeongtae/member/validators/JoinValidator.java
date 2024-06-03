@@ -6,6 +6,7 @@ import org.yeongtae.global.validators.Validator;
 import org.yeongtae.member.controllers.RequestJoin;
 import org.yeongtae.member.mapper.MemberMapper;
 
+// JoinValidator 클래스: 회원 가입 및 로그인 요청에 대한 유효성 검사를 수행하는 Validator 클래스입니다.
 public class JoinValidator implements Validator<RequestJoin>, RequiredValidator {
 
     private final MemberMapper mapper;
