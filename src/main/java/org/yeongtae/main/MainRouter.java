@@ -1,20 +1,17 @@
 package org.yeongtae.main;
 
-import org.yeongtae.global.Controller;
-import org.yeongtae.global.ControllerLocator;
-import org.yeongtae.global.Menu;
-import org.yeongtae.global.Router;
+import org.yeongtae.global.*;
 import org.yeongtae.global.constants.MainMenu;
 import org.yeongtae.main.controllers.MainController;
 import org.yeongtae.member.controllers.MemberControllerLocator;
 
-public class MainRouter implements Router {
+public class MainRouter implements Router, Startable {
 
-    private static Router instance;
+    private static MainRouter instance;
 
     private MainRouter() {}
 
-    public static Router getInstance() {
+    public static MainRouter getInstance() {
         if (instance == null) {
             instance = new MainRouter();
         }

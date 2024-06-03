@@ -5,5 +5,5 @@ package org.yeongtae.global;
  */
 public interface Router {
     void change(Menu menu);
-    void start();
+    // void start();
 }
